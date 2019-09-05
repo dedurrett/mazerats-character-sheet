@@ -1,2 +1,2 @@
-# mazrats-character0sheet
+# mazrats-character-sheet
 Maze Rats character sheet f/u/w Roll20
