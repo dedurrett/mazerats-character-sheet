@@ -1,0 +1,81 @@
+<div class="sheet-box">
+  <h2>MAZE RATS</h2>
+  <div class="sheet-startcol" style="width: 68%;">
+    <label>NAME</label>
+    <input type="text" name="attr_character_name">
+  </div>
+  <div class="sheet-col" style="width: 13%;">
+    <label>LEVEL</label>
+    <input class="sheet-number" type="text" name="attr_level" value="1" min="1" max="7">
+  </div>
+  <div class="sheet-endcol" style="width: 13%;">
+    <label>XP</label>
+    <input class="sheet-number" type="text" name="attr_xp" value="0" min="0" max="42">
+  </div>
+</div>
+<div class="sheet-box">
+  <div class="sheet-startcol" style="width: 48%;">
+    <div class="sheet-startcol" style="width: 47%;">
+      <div style="margin-left: 40%;">
+        <label>STR</label>
+        <input class="sheet-attrnum" type="text" name="attr_str" value="0">
+        <button type="roll" value="/me rolls [[?{Roll with Advantage?|No, 2d6+@{str}|Yes, 3d6d1+@{str}}]] on STR."></button>
+        <label>DEX</label>
+        <input class="sheet-attrnum" type="text" name="attr_dex" value="0">
+        <button type="roll" value="/me rolls [[?{Roll with Advantage?|No, 2d6+@{dex}|Yes, 3d6d1+@{dex}}]] on DEX."></button>
+        <label>WIL</label>
+        <input class="sheet-attrnum" type="text" name="attr_wil" value="0">
+        <button type="roll" value="/me rolls [[?{Roll with Advantage?|No, 2d6+@{wil}|Yes, 3d6d1+@{wil}}]] on WIL."></button>
+      </div>
+    </div>
+    <div class="sheet-endcol" style="width: 47%;">
+      <div style="margin-left: 20%;">
+        <label>ATTACK</label>
+        <input class="sheet-attrnum" type="text" name="attr_attack" value="0">
+        <button type="roll" value="/me rolls [[?{Roll with Advantage?|No, 2d6+@{attack}|Yes, 3d6d1+@{attack}}]] on ATTACK."></button>
+        <label>ARMOR</label>
+        <input class="sheet-attrnum" type="text" name="attr_armor" value="6">
+        <label>HEALTH</label>
+        <input class="sheet-attrnum" type="text" name="attr_health" value="4">
+        <input class="sheet-attrnum" type="hidden" name="attr_health_max" value="(@{level}*2)+2" disabled="true">
+      </div>
+    </div>
+    <input type="text" class="sheet-advancement" name="attr_advancement1">
+    <input type="text" class="sheet-advancement" name="attr_advancement2">
+    <input type="text" class="sheet-advancement" name="attr_advancement3">
+    <input type="text" class="sheet-advancement" name="attr_advancement4">
+    <img class="sheet-hints" src="https://i.imgur.com/sfy6mtG.png" alt="Maze Rats Advancement Table">
+  </div>
+  <div class="sheet-col" style="width: 23%;">
+    <label>NOTES</label>
+    <textarea name="attr_notes"></textarea>
+  </div>
+  <div class="sheet-endcol" style="width: 23%;">
+    <label>HANDS</label>
+    <input type="text" class="sheet-equipment" name="attr_hands1">
+    <input type="text" class="sheet-equipment" name="attr_hands2">
+    <label>BELT</label>
+    <input type="text" class="sheet-equipment" name="attr_belt1">
+    <input type="text" class="sheet-equipment" name="attr_belt2">
+    <label>WORN</label>
+    <input type="text" class="sheet-equipment" name="attr_worn1">
+    <input type="text" class="sheet-equipment" name="attr_worn2">
+    <input type="text" class="sheet-equipment" name="attr_worn3">
+    <input type="text" class="sheet-equipment" name="attr_worn4">
+    <label>BACKPACK</label>
+    <input type="text" class="sheet-equipment" name="attr_backpack1">
+    <input type="text" class="sheet-equipment" name="attr_backpack2">
+    <input type="text" class="sheet-equipment" name="attr_backpack3">
+    <input type="text" class="sheet-equipment" name="attr_backpack4">
+    <input type="text" class="sheet-equipment" name="attr_backpack5">
+    <input type="text" class="sheet-equipment" name="attr_backpack6">
+    <input type="text" class="sheet-equipment" name="attr_backpack7">
+    <input type="text" class="sheet-equipment" name="attr_backpack8">
+  </div>
+</div>
+<div class="sheet-box">
+    <input type="checkbox" class="sheet-creation-checkbox">
+    <div class="sheet-creation">
+        <img src="https://i.imgur.com/rFMCsoQ.png" alt="Maze Rats Character Creation">
+    </div>
+</div>
